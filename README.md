@@ -1,24 +1,28 @@
 # polydome
 
-## Citing our work
-This dataset was gathered for the RISK project (SNSF grant number 200021 17562) and NCCR Automation project (SNSF grant number 51NF40\_180545). If you use of it for your own research, remember to cite
-> @article{shi2022data,
-  title={Data-driven input reconstruction and experimental validation},
-  author={Shi, Jicheng and Lian, Yingzhao and Jones, Colin N},
-  journal={IEEE Control Systems Letters},
-  volume={6},
-  pages={3259--3264},
-  year={2022},
-  publisher={IEEE}
-}
-
 ## Author & Date 
 
 Jicheng Shi, March 2022.
 
+## Citing our work
+This dataset was gathered for the RISK project (SNSF grant number 200021 17562) and NCCR Automation project (SNSF grant number 51NF40\_180545). If you use of it for your own research, remember to cite
+> @article{shi2022data,  
+  title={Data-driven input reconstruction and experimental validation},  
+  author={Shi, Jicheng and Lian, Yingzhao and Jones, Colin N},  
+  journal={IEEE Control Systems Letters},  
+  volume={6},  
+  pages={3259--3264},  
+  year={2022},  
+  publisher={IEEE}  
+}
+
+**Other related papers**  
+1. Y. Lian, J. Shi, M. P. Koch, and C. N. Jones, "Adaptive robust data-driven building control via bi-level reformulation: An experimental result," 2021, arXiv:2106.05740.  
+2. Y. Lian, J. Shi, and C. N. Jones, "Physically Consistent Multiple-Step Data-Driven Predictions Using Physics-based Filters," 2023, in preparation. 
+
 ## Brief Description 
 
-HVAC system data from an entire building, called Polydome. The time-series dataset (12k points) is collected in two seasonal periods (summer and winter) with a 15-minute sampling frequency. In paticular, part of the dataset contains the occupancy and CO2 values (1k+ points).
+HVAC system data from an entire building, called Polydome. The time-series dataset (12k+ points) is collected in two seasonal periods (summer and winter) with a 15-minute sampling frequency. In paticular, part of the dataset contains the occupancy and CO2 values (1k+ points).
 The database is built based on risk-br's structure by Emilio Maddalena.
 
 ## Long Description 
