@@ -1,5 +1,9 @@
 # polydome
 
+## Author & Date 
+
+Jicheng Shi, March 2022.
+
 ## Citing our work
 This dataset was gathered for the RISK project (SNSF grant number 200021 17562) and NCCR Automation project (SNSF grant number 51NF40\_180545). If you use of it for your own research, remember to cite
 > @article{shi2022data,  
@@ -12,9 +16,6 @@ This dataset was gathered for the RISK project (SNSF grant number 200021 17562) 
   publisher={IEEE}  
 }
 
-## Author & Date 
-
-Jicheng Shi, March 2022.
 
 ## Brief Description 
 
