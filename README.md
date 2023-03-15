@@ -2,14 +2,14 @@
 
 ## Citing our work
 This dataset was gathered for the RISK project (SNSF grant number 200021 17562) and NCCR Automation project (SNSF grant number 51NF40\_180545). If you use of it for your own research, remember to cite
-> @article{shi2022data,
-  title={Data-driven input reconstruction and experimental validation},
-  author={Shi, Jicheng and Lian, Yingzhao and Jones, Colin N},
-  journal={IEEE Control Systems Letters},
-  volume={6},
-  pages={3259--3264},
-  year={2022},
-  publisher={IEEE}
+> @article{shi2022data,  
+  title={Data-driven input reconstruction and experimental validation},  
+  author={Shi, Jicheng and Lian, Yingzhao and Jones, Colin N},  
+  journal={IEEE Control Systems Letters},  
+  volume={6},  
+  pages={3259--3264},  
+  year={2022},  
+  publisher={IEEE}  
 }
 
 ## Author & Date 
