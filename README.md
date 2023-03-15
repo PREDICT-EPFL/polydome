@@ -1,5 +1,7 @@
 # polydome
 
+[![DOI](https://zenodo.org/badge/614268999.svg)](https://zenodo.org/badge/latestdoi/614268999)
+
 ## Author & Date 
 
 Jicheng Shi, March 2022.
