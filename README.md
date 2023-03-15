@@ -8,14 +8,15 @@ Jicheng Shi, March 2022.
 
 ## Brief Description 
 
-HVAC system data from an entire building, called Polydome. The time-series dataset is collected in two seasonal periods (summer and winter) with a 15-minute sampling frequency. In paticular, part of the dataset contains the occupancy and CO2 values (1k+ points).
+HVAC system data from an entire building, called Polydome. The time-series dataset (12k points) is collected in two seasonal periods (summer and winter) with a 15-minute sampling frequency. In paticular, part of the dataset contains the occupancy and CO2 values (1k+ points).
 The database is built based on risk-br's structure by Emilio Maddalena.
 
 ## Long Description 
 Polydome is a freestanding $600 m^2$ single-zone building on the EPFL campus. It is regularly used for lectures/exams and accommodates up to 200 people.
 
-In the Polydome, a roof-top heat pump, AERMEC RTY-04, serves as an HVAC system. It can execute ventilation (~2.4kW), heating (~6kW), and cooling (~4.6kW). The heat pump collects both the external air and the return air from the room side. When the heat pump is open, it keeps pumping the air to the room for ventilation. At the same time, it can heat or cool the air before pumping.
-The heating and cooling procedure is switched on/off according to the difference between the return air temperature (room side) and the corresponding setpoint. By setting the heating (cooling) setpoint 1 degree higher (lower) than the return air temperature, one compressor in the heat pump starts to heat (cool) the air. If this difference is more than 2 degrees, two compressors begin to work together. But this condition should be avoided because the internal controller for the two compressors is not well designed. 
+In the Polydome, a roof-top heat pump, AERMEC RTY-04, serves as an HVAC system. It can execute ventilation (~2.4kW), heating (~6kW), and cooling (~4.6kW). The heat pump collects both the external air and the return air from the room side. When the heat pump is open, it keeps pumping the air to the room for ventilation. The flow rate of the ventilation air is roughly constant. At the same time, it can heat or cool the air before pumping. The heating and cooling procedure is switched on/off according to the difference between the return air temperature (room side) and the corresponding setpoint. By setting the heating (cooling) setpoint 1 degree higher (lower) than the return air temperature, one compressor in the heat pump starts to heat (cool) the air. If this difference is more than 2 degrees, two compressors begin to work together. But this condition should be avoided because the internal controller for the two compressors is not well designed. 
+
+The people in the building are counted by Jicheng Shi, not by other advanced sensors. The reason is that the authors hope to quickly construct the occupancy measurement by CO2 levels with short-term data and without some complex sensors, e.g., cameras. But the manual counting leads to some errors. For example, on the night of Friday, 10-12-2021, the building should be occupied (maybe by a student party) based on the CO2 levels, but Jicheng had already left. In addition, four air quality sensors are installed evenly at four corners. The sensor distribution can be found in Folder/zwave_overview.jpg. 
 
 
 **From a control perspective**: The system inputs are ``power``, ``(return_temp-supply_temp)*supply_flow``. The outputs are ``sensor_temp_1``, ``sensor_temp_2``, ``sensor_temp_3``, ``sensor_temp_4``. The disturbances are ``weather_temp``, ``weather_rad``.
@@ -23,19 +24,22 @@ The heating and cooling procedure is switched on/off according to the difference
 The electrical power of the heat pump is measured every one minute. The value of ``power`` represents the average electrical power within each sampling period. When ``mode``=1 (0), the heat pump executes the heating (cooling) mode, and the  ``power`` is negative (positive). One may also compute the heating or cooling energy by ``(return_temp-supply_temp)*supply_flow``.  Four temperature sensors are installed in different places: two on the 1.5-meter-high walls, two on the top of the small rooms (>2.5m) in the Polydome. In system identification, one may use the average to attenuate the measurement noises. The external weather data are collected from a weather API, tomorrow.io. It offers an accurate weather estimation at 2 meters above the ground for any specific longitude and latitude. The current dataset was collected during the summer vacation, so occupancy should be zero.
 
 
-**When was it collected?** From July 15, 2021, to September 8, 2021.
+**When was it collected?** Two long-term periods: from July 15, 2021, to September 8, 2021; from October 31, 2021, to January 14, 2022. One short-term period including occupancy: from December 6, 2021, to December 19, 2021.
 
 **Sampling period**: 15 minutes.
 
 ## Folders/Files
 
-:file_folder: **data**: contains the data files.
+:file_folder: **dataset/data**: contains the data files.
 
-``raw_2021-07-015_2021-09-02.csv``: original dataset from the local database
 
-``raw_2021-07-015_2021-09-02.mat`: a structure ``exp` in Matlab that contains the same data as the '.csv' file.
+``raw_2021-07-15_2021-09-08.mat``: a structure ``exp` in Matlab that contains the collected data.
+``raw_2021-10-31_2022-01-14.mat``: a structure ``exp` in Matlab that contains the collected data.
+``raw_06-12-2021_19-12-2021.mat``: a structure ``exp` in Matlab that contains the collected data (occupancy included).
 
-:file_folder: **docs**: contains some pictures to illustrate the system architecture.
+:file_folder: **dataset/docs**: contains some pictures to illustrate the system architecture.
+
+:file_folder: **dataset/docs**: contains an example code for the paper "Data-driven input reconstruction and experimental validation".
 
 ## Measurements
 
@@ -68,4 +72,14 @@ The electrical power of the heat pump is measured every one minute. The value of
 ``setpoint_cool`` \[deg Celsius\]: temperature setpoint of the heating mode for the heat pump.
 
 ``setpoint_heat`` \[deg Celsius\]: temperature setpoint of the cooling mode for the heat pump.
+
+``co2_1`` \[deg Celsius\]: CO2 level measured by 1 air quality sensor.
+
+``co2_2`` \[deg Celsius\]: CO2 level measured by 1 air quality sensor.
+
+``co2_3`` \[deg Celsius\]: CO2 level measured by 1 air quality sensor.
+
+``co2_4`` \[deg Celsius\]: CO2 level measured by 1 air quality sensor.
+
+``people`` \[ person\]: number of occupants manually counted by Jicheng.
 
