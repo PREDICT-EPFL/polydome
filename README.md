@@ -1,6 +1,16 @@
 # polydome
-Data and resource data of projects related to polydome
-# Polydome
+
+## Citing our work
+This dataset was gathered for the RISK project (SNSF grant number 200021 17562) and NCCR Automation project (SNSF grant number 51NF40\_180545). If you use of it for your own research, remember to cite
+> @article{shi2022data,
+  title={Data-driven input reconstruction and experimental validation},
+  author={Shi, Jicheng and Lian, Yingzhao and Jones, Colin N},
+  journal={IEEE Control Systems Letters},
+  volume={6},
+  pages={3259--3264},
+  year={2022},
+  publisher={IEEE}
+}
 
 ## Author & Date 
 
@@ -33,13 +43,13 @@ The electrical power of the heat pump is measured every one minute. The value of
 :file_folder: **dataset/data**: contains the data files.
 
 
-``raw_2021-07-15_2021-09-08.mat``: a structure ``exp` in Matlab that contains the collected data.
-``raw_2021-10-31_2022-01-14.mat``: a structure ``exp` in Matlab that contains the collected data.
-``raw_06-12-2021_19-12-2021.mat``: a structure ``exp` in Matlab that contains the collected data (occupancy included).
+``raw_2021-07-15_2021-09-08.mat``: a structure ``exp`` in Matlab that contains the collected data.
+``raw_2021-10-31_2022-01-14.mat``: a structure ``exp`` in Matlab that contains the collected data.
+``raw_06-12-2021_19-12-2021.mat``: a structure ``exp`` in Matlab that contains the collected data (occupancy included).
 
 :file_folder: **dataset/docs**: contains some pictures to illustrate the system architecture.
 
-:file_folder: **dataset/docs**: contains an example code for the paper "Data-driven input reconstruction and experimental validation".
+:file_folder: **code/IRO**: contains an example code for the paper "Data-driven input reconstruction and experimental validation".
 
 ## Measurements
 
