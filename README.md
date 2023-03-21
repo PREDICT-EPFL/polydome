@@ -21,6 +21,7 @@ This dataset was gathered for the RISK project (SNSF grant number 200021 17562) 
 **Other related papers**  
 1. Y. Lian, J. Shi, M. P. Koch, and C. N. Jones, "Adaptive robust data-driven building control via bi-level reformulation: An experimental result," 2021, arXiv:2106.05740 (Accepted by IEEE Transactions on Control Systems Technology).  [Template Code](https://github.com/YingZhaoleo/RISK_src_yingzhao/tree/main/deepc/robust_deepc_bilevel)
 2. Y. Lian, J. Shi, and C. N. Jones, "Physically Consistent Multiple-Step Data-Driven Predictions Using Physics-based Filters," 2023, arxiv:2303.09437. 
+3. J. Shi, Y. Lian, C. Salzmann and C. N. Jones, "Adaptive data-driven predictive control: a case study in building providing frequency regulation services", in preparation.
 
 ## Brief Description 
 
