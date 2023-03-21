@@ -2,9 +2,9 @@
 
 [![DOI](https://zenodo.org/badge/614268999.svg)](https://zenodo.org/badge/latestdoi/614268999)
 
-## Author & Date 
+## Author
 
-Jicheng Shi, March 2022.
+Jicheng Shi
 
 ## Citing our work
 This dataset was gathered for the RISK project (SNSF grant number 200021 17562) and NCCR Automation project (SNSF grant number 51NF40\_180545). If you use of it for your own research, remember to cite
