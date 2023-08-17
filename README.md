@@ -26,6 +26,9 @@ This dataset was gathered for the RISK project (SNSF grant number 200021 17562) 
 ## Brief Description 
 
 HVAC system data from an entire building, called Polydome. The time-series dataset (12k+ points) is collected in two seasonal periods (summer and winter) with a 15-minute sampling frequency. In particular, part of the dataset contains the occupancy and CO2 values (1k+ points).
+
+Besides, it contains the template code for the paper "Data-driven input reconstruction and experimental validation".
+
 The database is built based on risk-br's structure by Emilio Maddalena.
 
 ## Long Description 
