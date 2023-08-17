@@ -21,11 +21,11 @@ This dataset was gathered for the RISK project (SNSF grant number 200021 17562) 
 **Other related papers**  
 1. Y. Lian, J. Shi, M. P. Koch, and C. N. Jones, "Adaptive robust data-driven building control via bi-level reformulation: An experimental result," IEEE Transactions on Control Systems Technology (2023). [DOI: 10.1109/TCST.2023.3259641](https://doi.org/10.1109/TCST.2023.3259641) [Template Code](https://github.com/YingZhaoleo/RISK_src_yingzhao/tree/main/deepc/robust_deepc_bilevel)
 2. Y. Lian, J. Shi, and C. N. Jones, "Physically Consistent Multiple-Step Data-Driven Predictions Using Physics-based Filters," IEEE Control Systems Letters 7 (2023) 1885 - 1890. [DOI: 10.1109/LCSYS.2023.3282987](https://doi.org/10.1109/LCSYS.2023.3282987)
-3. J. Shi, Y. Lian, C. Salzmann and C. N. Jones, "Adaptive Data-Driven Predictive Control as a Module in Building Control Hierarchy: A Case Study of Demand Response in Switzerland",  arXiv preprint arXiv:2307.08866 (2023), [arXiv:2307.08866](https://arxiv.org/abs/2307.08866).
+3. J. Shi, Y. Lian, C. Salzmann and C. N. Jones, "Adaptive Data-Driven Predictive Control as a Module in Building Control Hierarchy: A Case Study of Demand Response in Switzerland",  arXiv preprint arXiv:2307.08866 (2023). [arXiv:2307.08866](https://arxiv.org/abs/2307.08866)
 
 ## Brief Description 
 
-HVAC system data from an entire building, called Polydome. The time-series dataset (12k+ points) is collected in two seasonal periods (summer and winter) with a 15-minute sampling frequency. In paticular, part of the dataset contains the occupancy and CO2 values (1k+ points).
+HVAC system data from an entire building, called Polydome. The time-series dataset (12k+ points) is collected in two seasonal periods (summer and winter) with a 15-minute sampling frequency. In particular, part of the dataset contains the occupancy and CO2 values (1k+ points).
 The database is built based on risk-br's structure by Emilio Maddalena.
 
 ## Long Description 
